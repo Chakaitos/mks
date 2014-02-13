@@ -1,0 +1,63 @@
+p{
+	color: #fff;
+	margin: 0px;
+	padding: 10px;
+}
+span {
+	font-size: 30px;
+}
+.ph {
+	background-color: #888;
+	padding: 10px;
+	margin: 5px;
+}
+.title {
+	background-color: #eee;
+	padding: 10px;
+	color: #111;
+}
+.first-alkaline {
+	background-color: #0000FF;
+}
+.second-alkaline {
+	background-color: #1919FF;
+}
+.third-alkaline {
+	background-color: #3333FF;
+}
+.fourth-alkaline {
+	background-color: #4D4DFF;
+}
+.fifth-alkaline {
+	background-color: #6666FF;
+}
+.sixth-alkaline {
+	background-color: #8080FF;
+}
+.seventh-alkaline {
+	background-color: #9999FF;
+}
+.neutral {
+	background-color: #00CC00;
+}
+.seventh-acid {
+	background-color: #EB9999;
+}
+.sixth-acid {
+	background-color: #E68080;
+}
+.fifth-acid {
+	background-color: #E06666;
+}
+.fourth-acid {
+	background-color: #DB4D4D;
+}
+.third-acid {
+	background-color: #D63333;
+}
+.second-acid {
+	background-color: #D11919;
+}
+.first-acid {
+	background-color: #CC0000;
+}
