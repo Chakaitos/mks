@@ -1,0 +1,1 @@
+Repository for MakerSquare exercises.
