@@ -10,6 +10,7 @@ body {
 .toc {
 	background: white;
 	float: left;
+	clear: left;
 	width: 25%;
 	padding: 20px;
 	box-sizing: border-box;
@@ -28,4 +29,25 @@ body {
 	width: 25%;
 	padding: 20px;
 	box-sizing: border-box;
+}
+
+.navbar {
+  list-style: none;
+  margin-bottom: 20px; /* <-- ADD THIS LINE */
+}
+
+ul.navbar li a {
+  background: #ddd;
+  float: left;
+  padding: 8px 20px;
+  margin-right: 6px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
 }
