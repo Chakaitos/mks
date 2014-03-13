@@ -16,6 +16,7 @@
 
   <div class="spacer">
     Scroll down (all the way down)
+    <p class="clicks">Clicks: <div class="clicks" id="new-click-count"></div></p>
   </div>
 
   <p>
@@ -23,14 +24,28 @@
     <a id="open-link" href="#">Open the box</a>
   </p>
 
-  <p id="box">Surprise!</p>
+  <p id="box">Surprise! <button>Close Box</button></p>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript">
-    $('#open-link').on('click', function (e) {
-      e.preventDefault();
-      $('#box').show();
-      // alert("lol it's locked.");
+    var counter = 0;
+
+    $(document).ready(function(){
+      $('#open-link').on('click', function (e) {
+        e.preventDefault();
+        $('#box').show();
+        // alert("lol it's locked.");
+      });
+      $('#box button').on('click', function() {
+        $('#box').hide();
+      });
+      $(document).on('click', function() {
+        counter += 1;
+        $('#new-click-count').text(counter);
+        if (counter % 5 == 0) {
+          alert("New High Score: " + counter);
+        }
+      });
     });
   </script>
 
