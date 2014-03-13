@@ -5,43 +5,106 @@
 <body>
 
 <script type="text/javascript">
+	// PART # 1
+
   // alert('hi');
- //  var name = prompt("What is your name?");
+  // var name = prompt("What is your name?");
 	// alert("Nice to meet you, " + name);
 
 	// alert("Welcome back, " + name);
 
-	// 3.1
-
+	// Ex 3.1
 	// var firstName = prompt("What is your first name?");
 	// var lastName = prompt("What is your last name?");
 	// var fullName = firstName + ' ' + lastName;
 	// alert("Nice to meet you, " + fullName);
 
-	// 3.2
-
+	// Ex 3.2
 	// var string = prompt("Enter some text");
 	// alert(string.toUpperCase());
 
-	//3.3
-
+	// Ex 3.3
 	// alert("Nice to meet you, " + fullName.toUpperCase());
 
-	// 4
+	// Ex 4
+	// var age = prompt("How old are you?");
 
-	var age = prompt("How old are you?");
+	// if (age >= 21 && age <= 100) {
+	// 	alert("Welcome to the club!");
+	// }
 
-	if (age >= 21 && age <= 100) {
-		alert("Welcome to the club!");
+	// else if (age > 0 && age < 21) {
+	// 	alert("Sorry, you are not old enough");
+	// }
+
+	// else {
+	// 	alert("Are you trying to be funny? Get out!!");
+	// }
+
+	// PART # 2
+	// Ex 2
+	var number = prompt("Enter a number");
+
+	if (number % 2 == 0) {
+		alert("You are an even steven!");
 	}
 
-	else if (age > 0 && age < 21) {
-		alert("Sorry, you are not old enough");
+	else if (number % 7 == 0) {
+		alert("You are a lucky number");
 	}
 
 	else {
-		alert("Are you trying to be funny? Get out!!");
+		alert("You are a regular number, or maybe not even a number.");
 	}
+
+	// Ex 2.1
+	var slap = function() {
+	  alert('SLAP');
+	};
+	slap();
+
+	// Ex 2.2
+	var kick = function (name) {
+	  alert(name + ' reproaches your behavior.');
+	};
+	kick('Billy');
+
+	// Ex 2.3
+	var doubleIt = function (x) {
+	  alert(x + ' times two is ' + x * 2);
+	};
+	doubleIt(8);
+
+	// Ex 2.4
+	var greet = function (name) {
+	  alert("Welcome, " + name);
+	};
+	greet('Bob');
+
+	// Ex 3.1
+	var yell = function(string) {
+	  alert(string.toUpperCase());
+	};
+	yell('hello, world');
+
+	// Ex 3.2
+	var divideBy = function(x, y) {
+	  return (x / y);
+	};
+
+	// Ex 3.3
+	var welcome = function(name1, name2) {
+		if (name1 != undefined && name2 != undefined){
+			return ("Welcome, " + name1 + " and " + name2 + "!");
+		}
+		else if (name2 == undefined){
+			return ("Welcome, " + name1 + "!");
+		}
+		else {
+			return ("Type in a name to welcome.")
+		}
+	}
+
 
 </script>
 

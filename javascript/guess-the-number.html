@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Guess the Number!</title>
+</head>
+<body>
+
+<script type="text/javascript">
+  var secretNumber = parseInt(Math.random() * 100, 10) + 1;
+  var userGuess = parseInt(prompt("enter a number between 1 and 100"));
+
+  var higherLower = function() {
+  	if (userGuess == secretNumber) {
+  		alert("Congratulations! you guessed the secret number!");
+  	} 
+    else if (userGuess > secretNumber) {
+  		alert("Your guess was to high! Try a lower number");
+      checkResult();
+  	} 
+    else if (userGuess < secretNumber) {
+  	  alert("Your guess was to low! Try a higher number");
+      checkResult();
+    } 
+    else { 
+      alert("That's not a valid entry, please enter a number between 1 and 100");
+      checkResult();
+    }
+  }
+
+  var checkResult = function() {
+    if (userGuess == secretNumber) {
+      alert("Congratulations! you guessed the secret number!");
+    } 
+    else {
+      userGuess = prompt("enter a number between 1 and 100");
+      higherLower();
+    }
+  }
+
+  higherLower();
+</script>
+
+</body>
+</html>
